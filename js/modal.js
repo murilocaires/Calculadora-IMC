@@ -1,6 +1,6 @@
 export const Modal = {
     wrapper: document.querySelector('.modal-wrapper'),
-    message: modalMessage= document.querySelector('.modal h2 span'),
+    message: document.querySelector('.modal h2 span'),
     buttonClose: document.querySelector('.modal button.close'),
     open(){
 
@@ -17,7 +17,7 @@ Modal.buttonClose.onclick = () =>{
 window.addEventListener('keydown', handleKeydown)
 
 function handleKeydown(event){
-    if(event.key === Escape){
+    if(event.key === 'Escape'){
         Modal.close()
     }
 }
